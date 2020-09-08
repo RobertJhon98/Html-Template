@@ -5,79 +5,6 @@
     <title>Template</title>
 
     <style>
-      body {
-        font-family: sans-serif;
-        padding: 20px;
-        color: #525050;
-      }
-      .header {
-        display: flex;
-        flex-flow: column;
-      }
-      @media (min-width: 768px) {
-        body {
-          width: 55%;
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .res {
-          padding: 30px;
-        }
-      }
-      .header-1 {
-        text-align: center;
-        font-size: 40px;
-      }
-      .header img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 150px;
-      }
-      .header-2 {
-        text-align: center;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-      }
-      /* 
-      .hr-text {
-        line-height: 1em;
-        position: relative;
-        outline: 0;
-        border: 0;
-        color: black;
-        text-align: center;
-        height: 1.5em;
-        opacity: 0.5;
-      }
-
-      .hr-text:before {
-        content: "";
-        background: linear-gradient(
-          to right,
-          transparent,
-          #818078,
-          transparent
-        );
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        height: 1px;
-      }
-      .hr-text:after {
-        content: attr(data-content);
-        position: relative;
-        display: inline-block;
-        font-weight: bold;
-
-        padding: 0 0.5em;
-        line-height: 1.5em;
-        background-color: #fcfcfa;
-      } */
-
       .separator {
         display: flex;
         align-items: center;
@@ -87,7 +14,7 @@
       .separator::after {
         content: "";
         flex: 1;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #525050;
       }
       .separator::before {
         margin-right: 0.25em;
@@ -95,106 +22,63 @@
       .separator::after {
         margin-left: 0.25em;
       }
-
-      .res-box {
-        display: flex;
-        justify-content: space-between;
-        align-content: flex-start;
-        justify-content: flex-start;
-        margin-bottom: 20px;
-      }
-      .res-avatar {
-        flex-basis: 20px;
-      }
-      .res-data {
-        position: relative;
-        top: -10px;
-        margin-left: 20px;
-      }
-      .avatar {
-        flex: 1;
-        font-family: Verdana, sans-serif;
-        font-size: 15px;
-        line-height: 1.5;
-        color: #000 !important;
-        box-sizing: inherit;
-        border-style: none;
-        vertical-align: middle;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-      }
-      .pro-bar {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-      }
-      .progress {
-        margin: 4px;
-        text-align: center;
-      }
-      .barOverflow {
-        overflow: hidden;
-        width: 180px;
-        height: 90px;
-        margin-bottom: -14px;
-      }
-
-      .bar {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        box-sizing: border-box;
-        border: 10px solid #ccc;
-        border-bottom-color: #0bf;
-        border-right-color: #0bf;
-      }
-
-      .table {
-        display: flex;
-        justify-content: center;
-      }
-      .eng-table {
-        border: solid 1px #ddeeee;
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-      .eng-table thead th {
-        /* background-color: #ddefef; */
-        border: solid 1px #ddeeee;
-        color: black;
-        padding: 10px;
-        text-align: left;
-      }
-      .eng-table tbody td {
-        border: solid 1px #ddeeee;
-        color: #333;
-        padding: 10px;
-      }
-      .webapp-link {
-        padding: 10px 0 10px 0;
-        display: flex;
-        justify-content: center;
-      }
     </style>
   </head>
 
-  <body>
-    <section class="header">
-      <img src="./favicon-32x32.png" alt="" />
-      <!-- <h1 class="header-1">Standup History</h1>
-      <h4 class="header-2">
-        History for Daily Standup utwt 4/9/20 MF message no between 6 Sep and 7
-        Sep from all users in CSV format
-      </h4> -->
-      <span class="header-2"
+  <body
+    style="
+      font-family: sans-serif;
+      padding: 20px;
+      color: #525050;
+      margin-left: auto;
+      margin-right: auto;
+      width: 55%;
+    "
+  >
+    <section style="display: flex; flex-flow: column">
+      <img
+        src="./favicon-32x32.png"
+        alt=""
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 150px;
+        "
+      />
+      <span
+        style="
+          text-align: center;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 20px;
+        "
         ><h1>Daily Standup utwt 4/9/20 MF</h1>
         6 Sep to 7 Sep</span
       >
-      <div class="pro-bar">
-        <div class="progress">
-          <div class="barOverflow">
-            <div class="bar" style="transform: rotate(225deg)"></div>
+      <div style="display: flex; justify-content: center; margin-bottom: 10px">
+        <div style="margin: 4px; text-align: center">
+          <div
+            style="
+              overflow: hidden;
+              width: 180px;
+              height: 90px;
+              margin-bottom: -14px;
+            "
+          >
+            <div
+              style="
+                transform: rotate(225deg);
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                box-sizing: border-box;
+                border: 10px solid #ccc;
+                border-bottom-color: #0bf;
+                border-right-color: #0bf;
+              "
+            ></div>
           </div>
 
           <span
@@ -208,12 +92,36 @@
     <!-- <hr class="hr-text" data-content="Thursday, January 30" /> -->
     <div class="separator">Thursday, January 30</div>
 
-    <section class="res">
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./img_avatar2.png" alt="Avatar" class="avatar" />
+    <section style="padding: 30px">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -246,11 +154,35 @@
           </div>
         </div>
       </div>
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./img_avatar.png" alt="Avatar" class="avatar" />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -283,11 +215,35 @@
           </div>
         </div>
       </div>
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./avatar6.png" alt="Avatar" class="avatar" />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -321,16 +277,38 @@
         </div>
       </div>
     </section>
-
-    <!-- <hr class="hr-text" data-content="Friday, January 31" /> -->
     <div class="separator">Thursday, January 30</div>
 
-    <section class="res">
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./img_avatar2.png" alt="Avatar" class="avatar" />
+    <section style="padding: 30px">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -363,11 +341,35 @@
           </div>
         </div>
       </div>
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./img_avatar.png" alt="Avatar" class="avatar" />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -400,11 +402,222 @@
           </div>
         </div>
       </div>
-      <div class="res-box">
-        <div class="res-avatar">
-          <img src="./avatar6.png" alt="Avatar" class="avatar" />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
         </div>
-        <div class="res-data">
+        <div style="position: relative; top: -10px; margin-left: 20px">
+          <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separator">Thursday, January 30</div>
+
+    <section style="padding: 30px">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
+        </div>
+        <div style="position: relative; top: -10px; margin-left: 20px">
+          <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
+        </div>
+        <div style="position: relative; top: -10px; margin-left: 20px">
+          <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has <br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+            </p>
+          </div>
+          <div class="QA">
+            <h4>What did you get done since last report?</h4>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-content: flex-start;
+          justify-content: flex-start;
+          margin-bottom: 20px;
+        "
+      >
+        <div style="flex-basis: 20px">
+          <img
+            src="./img_avatar2.png"
+            alt="Avatar"
+            style="
+              flex: 1;
+              font-family: Verdana, sans-serif;
+              font-size: 15px;
+              line-height: 1.5;
+              color: #000 !important;
+              box-sizing: inherit;
+              border-style: none;
+              vertical-align: middle;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+            "
+          />
+        </div>
+        <div style="position: relative; top: -10px; margin-left: 20px">
           <p class=""><strong>Balaji Rathinavel</strong> 😐 at 7:30am</p>
           <div class="QA">
             <h4>What did you get done since last report?</h4>
@@ -439,28 +652,68 @@
       </div>
     </section>
 
-    <a class="webapp-link" href="#">See full report here</a>
+    <a
+      style="padding: 10px 0 10px 0; display: flex; justify-content: center"
+      href="#"
+      >See full report here</a
+    >
 
-    <section class="table">
-      <table class="eng-table">
+    <section style="display: flex; justify-content: center">
+      <table
+        style="
+          border: solid 1px #ddeeee;
+          border-collapse: collapse;
+          border-spacing: 0;
+        "
+      >
         <thead>
           <tr>
-            <th>Participant</th>
-            <th>Engagement</th>
+            <th
+              style="
+                border: solid 1px #ddeeee;
+                color: black;
+                padding: 10px;
+                text-align: left;
+              "
+            >
+              Participant
+            </th>
+            <th
+              style="
+                border: solid 1px #ddeeee;
+                color: black;
+                padding: 10px;
+                text-align: left;
+              "
+            >
+              Engagement
+            </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Balaji Rathinavel</td>
-            <td>80%</td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              Balaji Rathinavel
+            </td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              80%
+            </td>
           </tr>
           <tr>
-            <td>Siva Shankar</td>
-            <td>90%</td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              Siva Shankar
+            </td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              90%
+            </td>
           </tr>
           <tr>
-            <td>Rajesh Shanmugam</td>
-            <td>91%</td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              Rajesh Shanmugam
+            </td>
+            <td style="border: solid 1px #ddeeee; color: #333; padding: 10px">
+              91%
+            </td>
           </tr>
         </tbody>
       </table>
