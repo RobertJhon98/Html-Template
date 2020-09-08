@@ -41,7 +41,7 @@
         margin-right: auto;
         margin-bottom: 20px;
       }
-
+      /* 
       .hr-text {
         line-height: 1em;
         position: relative;
@@ -71,14 +71,31 @@
         content: attr(data-content);
         position: relative;
         display: inline-block;
-        /* color: black; */
         font-weight: bold;
 
         padding: 0 0.5em;
         line-height: 1.5em;
-        /* color: #818078; */
         background-color: #fcfcfa;
+      } */
+
+      .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
       }
+      .separator::before,
+      .separator::after {
+        content: "";
+        flex: 1;
+        border-bottom: 1px solid #000;
+      }
+      .separator::before {
+        margin-right: 0.25em;
+      }
+      .separator::after {
+        margin-left: 0.25em;
+      }
+
       .res-box {
         display: flex;
         justify-content: space-between;
@@ -110,6 +127,7 @@
       .pro-bar {
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
       }
       .progress {
         margin: 4px;
@@ -187,7 +205,8 @@
       </div>
     </section>
 
-    <hr class="hr-text" data-content="Thursday, January 30" />
+    <!-- <hr class="hr-text" data-content="Thursday, January 30" /> -->
+    <div class="separator">Thursday, January 30</div>
 
     <section class="res">
       <div class="res-box">
@@ -303,7 +322,8 @@
       </div>
     </section>
 
-    <hr class="hr-text" data-content="Friday, January 31" />
+    <!-- <hr class="hr-text" data-content="Friday, January 31" /> -->
+    <div class="separator">Thursday, January 30</div>
 
     <section class="res">
       <div class="res-box">
